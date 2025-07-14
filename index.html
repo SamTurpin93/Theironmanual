@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Iron Manual</title>
+  <!-- Add Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,800|Poppins:400,500,700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', Arial, sans-serif;
       background-color: #ffffff;
       color: #111;
       margin: 0;
@@ -21,14 +23,13 @@
       padding: 40px 10px 20px 10px;
     }
     header img {
-      max-width: 180px;
+      max-width: 250px;
       margin-bottom: 20px;
-      border-radius: 12px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-      font-family: Impact, sans-serif;
+    /* Updated Heading Font */
+    header p,
+    .section h2 {
+      font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
     }
     .section {
       padding: 30px 15px;
@@ -39,18 +40,17 @@
     .section h2 {
       font-size: 1.8rem;
       margin-bottom: 20px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.01em;
     }
     .section p, .section ul {
       font-size: 1.1rem;
       line-height: 1.6;
+      font-family: 'Poppins', Arial, sans-serif;
     }
     ul {
-      text-align: left;
-      display: inline-block;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      padding-left: 0;
-      list-style-position: inside;
+      font-family: 'Poppins', Arial, sans-serif;
     }
     footer {
       text-align: center;
@@ -58,62 +58,62 @@
       font-size: 0.9rem;
       background-color: #eee;
       color: #333;
-    }
-    @media (max-width: 600px) {
-      header img { max-width: 120px; }
-      .section { padding: 20px 5px; }
-      header h1 { font-size: 1.5rem; }
-      .section h2 { font-size: 1.2rem; }
+      font-family: 'Poppins', Arial, sans-serif;
     }
   </style>
 </head>
 <body>
   <header>
     <img src="logo.png" alt="The Iron Manual Logo" />
-    <h1>The Iron Manual</h1>
-    <p style="font-family: 'Poppins', Arial, sans-serif; font-weight: 600; font-size: 1.2rem;">
-      The Health &amp; Fitness Guide For Young Men Starting Their Fitness Journey.
+    <p style="font-size: 1.4rem; font-weight: 700;">The Health & Fitness Guide For Young Men Starting Their Fitness Journey.</p>
+    <p style="text-align: center; font-weight: bold; color: #111; margin-bottom: 15px;">
+      For a limited, time, every barrier to achieving your fitness goals is half price.
     </p>
-    <p style="font-weight: bold; color: #111; margin-bottom: 12px;">
-      For a limited time, every barrier to achieving your fitness goals is half price.
+    <p style="text-align: center; color: #333;">
+      I built The Iron Manual for guys like I used to be — stuck in the gym grind, doing everything I thought was right, but getting nowhere. It’s the shortcut I wish I had: clear, simple advice that actually works. I cover training, nutrition, recovery, mindset, and lifestyle — all the things that matter when you want real, lasting results. No fluff, no guesswork, just straight answers and a plan that actually delivers. If you're sick of spinning your wheels and ready to level up, this is where that starts.
     </p>
-  </header>
-
-  <section class="section" style="padding-top: 0;">
-    <p style="font-size:1.13rem; text-align:center; margin-bottom:20px;">
-      I built The Iron Manual for guys like I used to be — stuck in the gym grind, doing everything I thought was right, but getting nowhere. It’s the shortcut I wish I had: clear, simple advice that actually works. I cover training, nutrition, recovery, mindset, and lifestyle — all the things that matter when you want real, lasting results.<br><br>
-      <strong>No fluff, no guesswork, just straight answers and a plan that actually delivers.</strong><br>
-      If you're sick of spinning your wheels and ready to level up, this is where that starts.
-    </p>
-    <ul>
+    <ul style="text-align: left; max-width: 500px; margin: 20px auto; font-size: 1.1rem;">
       <li>✅ One-off payment, no subscriptions</li>
-      <li>✅ 100+ manuals across training, nutrition, supplements, lifestyle and recovery</li>
+      <li>✅ 100+ manuals across training, nutrition, supplements, and lifestyle and recovery</li>
       <li>✅ Easy to read, even easier to apply</li>
     </ul>
-    <p style="margin-top: 18px; font-weight: bold; color: #c00; text-align: center;">
-      ⚠️ Limited spaces available at this price point, prices are based on occupancy.
+    <p style="margin-top: 10px; font-weight: bold; color: #c00; text-align: center;">
+      ⚠️ Limited spaces available at this price point, prices are based on occupancy
     </p>
-  </section>
+  </header>
 
   <section class="section" style="background-color: #f9f9f9;">
     <h2>What Our Early Access VIP Readers Are Saying</h2>
     <div id="testimonial-slider" style="max-width: 700px; margin: 0 auto; position: relative; height: 100px;">
-      <blockquote style="font-style: italic; margin: 0; transition: opacity 0.5s ease;" id="testimonial-text">Loading testimonials...</blockquote>
+      <blockquote style="font-style: italic; margin: 0; transition: opacity 0.5s ease;" id="testimonial-text">
+        “Everything is laid out for you — just follow it and go. – Blake P.”
+      </blockquote>
     </div>
   </section>
 
   <script>
     const testimonials = [
+      "I got early VIP access and these manuals are an absolute game changer. No fluff, just smart advice that actually works. – Alex M.",
+      "Finally, something I can follow without needing a PhD. Every guide is packed with useful info I can actually apply. – Jordan R.",
+      "I’ve read loads of fitness PDFs before — none are this clear, direct, or well-structured. These will change the game. – Casey L.",
+      "VIP access gave me everything I needed to overhaul my routine. Simple, science-backed and no hype. – Riley S.",
+      "Every manual makes sense. It’s like they were written for actual humans. – Sam K.",
+      "I stopped wasting time with fluff. This stuff works. – Jamie F.",
+      "Hands down the best training content I’ve ever read. – Morgan T.",
+      "Real advice from people who lift. Not influencers. – Devon A.",
+      "Nutrition finally makes sense to me thanks to these guides. – Taylor V.",
+      "I’m applying more from one manual than from 3 years of fitness blogs. – Chris G.",
+      "The best thing is how clear it all is. I don’t feel lost anymore. – Alex D.",
       "Everything is laid out for you — just follow it and go. – Blake P.",
-      "I got early VIP access and these manuals are an absolute game changer. – Alex M.",
-      "Every guide is packed with useful info I can actually apply. – Jordan R.",
-      "These will change the game. – Casey L.",
-      "Simple, science-backed and no hype. – Riley S.",
-      "It’s like they were written for actual humans. – Sam K.",
+      "From gym to kitchen, this stuff just fits real life. – Jordan S.",
+      "I actually enjoy learning about fitness now. Who knew? – Jamie L.",
+      "Not once did I think, 'Wait, what does that mean?' – Taylor W.",
+      "Every page feels like it respects my time. – Drew R.",
+      "It's like having a PT in PDF form. – Casey B.",
       "Solid advice with no fluff. That’s rare these days. – Robin M.",
+      "Tells you what you need to hear, not just what sounds good. – Ash C.",
       "I'm already seeing results from applying just one manual. – Lee H."
     ];
-
     let i = 0;
     const textEl = document.getElementById("testimonial-text");
     function showTestimonial() {
