@@ -18,44 +18,17 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 40px 10px;
+      padding: 40px 10px 20px 10px;
     }
     header img {
       max-width: 180px;
       margin-bottom: 20px;
+      border-radius: 12px;
     }
     header h1 {
       margin: 0;
       font-size: 2.2rem;
       font-family: Impact, sans-serif;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #666;
-      margin: 10px 0 30px;
-    }
-    .email-signup {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .email-signup input {
-      padding: 12px;
-      font-size: 1rem;
-      width: 250px;
-      max-width: 80%;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .email-signup button {
-      background-color: #111;
-      color: #fff;
-      padding: 12px 20px;
-      border: none;
-      font-size: 1rem;
-      cursor: pointer;
-      border-radius: 4px;
     }
     .section {
       padding: 30px 15px;
@@ -71,6 +44,14 @@
       font-size: 1.1rem;
       line-height: 1.6;
     }
+    ul {
+      text-align: left;
+      display: inline-block;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding-left: 0;
+      list-style-position: inside;
+    }
     footer {
       text-align: center;
       padding: 20px;
@@ -78,45 +59,59 @@
       background-color: #eee;
       color: #333;
     }
+    @media (max-width: 600px) {
+      header img { max-width: 120px; }
+      .section { padding: 20px 5px; }
+      header h1 { font-size: 1.5rem; }
+      .section h2 { font-size: 1.2rem; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="your-logo.png" alt="The Iron Manual Logo" />
-    <h1 style="font-family: Impact, sans-serif;">The Iron Manual</h1>
-    <p style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 1.4rem;">The Health &amp; Fitness Guide For Young Men Starting Their Fitness Journey.</p>
-    <p style="text-align: center; font-weight: bold; color: #111; margin-bottom: 15px;">For a limited time, every barrier to achieving your fitness goals is half price.</p>
-    <p style="text-align: center; margin: 10px 0 30px;">
-      I built The Iron Manual for guys like I used to be — stuck in the gym grind, doing everything I thought was right, but getting nowhere. It’s the shortcut I wish I had: clear, simple advice that actually works. I cover training, nutrition, recovery, mindset, and lifestyle — all the things that matter when you want real, lasting results. No fluff, no guesswork, just straight answers and a plan that actually delivers. If you're sick of spinning your wheels and ready to level up, this is where that starts.
+    <img src="logo.png" alt="The Iron Manual Logo" />
+    <h1>The Iron Manual</h1>
+    <p style="font-family: 'Poppins', Arial, sans-serif; font-weight: 600; font-size: 1.2rem;">
+      The Health &amp; Fitness Guide For Young Men Starting Their Fitness Journey.
     </p>
-    <form class="email-signup" action="#" method="POST">
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit">Notify Me</button>
-    </form>
+    <p style="font-weight: bold; color: #111; margin-bottom: 12px;">
+      For a limited time, every barrier to achieving your fitness goals is half price.
+    </p>
   </header>
 
-  <section class="section" style="padding-top: 0px;">
-    <ul style="text-align: center; list-style-position: inside; margin-top: 20px;">
+  <section class="section" style="padding-top: 0;">
+    <p style="font-size:1.13rem; text-align:center; margin-bottom:20px;">
+      I built The Iron Manual for guys like I used to be — stuck in the gym grind, doing everything I thought was right, but getting nowhere. It’s the shortcut I wish I had: clear, simple advice that actually works. I cover training, nutrition, recovery, mindset, and lifestyle — all the things that matter when you want real, lasting results.<br><br>
+      <strong>No fluff, no guesswork, just straight answers and a plan that actually delivers.</strong><br>
+      If you're sick of spinning your wheels and ready to level up, this is where that starts.
+    </p>
+    <ul>
       <li>✅ One-off payment, no subscriptions</li>
-      <li>✅ 100+ manuals across training, nutrition, supplements, and lifestyle and recovery</li>
+      <li>✅ 100+ manuals across training, nutrition, supplements, lifestyle and recovery</li>
       <li>✅ Easy to read, even easier to apply</li>
     </ul>
-    <p style="margin-top: 30px; font-weight: bold; color: #c00; text-align: center;">⚠️ Limited spaces available at this price point, prices are based on occupancy</p>
+    <p style="margin-top: 18px; font-weight: bold; color: #c00; text-align: center;">
+      ⚠️ Limited spaces available at this price point, prices are based on occupancy.
+    </p>
   </section>
 
   <section class="section" style="background-color: #f9f9f9;">
-    <h2 style="text-align: center; margin-bottom: 30px;">What Our Early Access VIP Readers Are Saying</h2>
+    <h2>What Our Early Access VIP Readers Are Saying</h2>
     <div id="testimonial-slider" style="max-width: 700px; margin: 0 auto; position: relative; height: 100px;">
-      <blockquote style="font-style: italic; margin: 0; transition: opacity 0.5s ease;" id="testimonial-text">
-        “Everything is laid out for you — just follow it and go. – Blake P.”
-      </blockquote>
+      <blockquote style="font-style: italic; margin: 0; transition: opacity 0.5s ease;" id="testimonial-text">Loading testimonials...</blockquote>
     </div>
   </section>
 
   <script>
     const testimonials = [
       "Everything is laid out for you — just follow it and go. – Blake P.",
-      // Add more testimonials here if you want to rotate them
+      "I got early VIP access and these manuals are an absolute game changer. – Alex M.",
+      "Every guide is packed with useful info I can actually apply. – Jordan R.",
+      "These will change the game. – Casey L.",
+      "Simple, science-backed and no hype. – Riley S.",
+      "It’s like they were written for actual humans. – Sam K.",
+      "Solid advice with no fluff. That’s rare these days. – Robin M.",
+      "I'm already seeing results from applying just one manual. – Lee H."
     ];
 
     let i = 0;
